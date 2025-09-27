@@ -39,11 +39,10 @@ class Temporizador:
         return formatear(self.__horas, self.__minutos, self.__segundos)
     
 #Creamos objeto:
-temporizador = Temporizador(23, 59, 59)
-
-#Realizamos diferentes comprobaciones usando los métodos previamente creados:
-print(temporizador)
-temporizador.siguiente_segundo()
-print(temporizador)
-temporizador.anterior_segundo()
-print(temporizador)
+if __name__ == "__main__":
+    temporizador = Temporizador(23, 59, 59)
+    print(temporizador)
+    temporizador.siguiente_segundo()
+    print(temporizador)
+    temporizador.anterior_segundo()
+    print(temporizador)
